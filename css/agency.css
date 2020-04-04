@@ -93,9 +93,10 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  position:absolute;
-  right:0;
-  bottom:-57;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -104.5px;
   background-color: #fed136;
   border-color: #fed136;
 }
