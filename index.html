@@ -383,7 +383,6 @@
                     width: 70%;
                     border-left: none;
                     height: 1000px;
-
                   }
                 </style>
                 <div class="tab">
@@ -426,6 +425,24 @@
                     Follow through - for defensive shot there is no follow through               
                   </p>
                 </div>
+                <script type="text/javascript">
+                  function openCity(evt, cityName){
+                    var i, tabcontent, tablinks;
+
+                    tabcontent=document.getElementsByClassName("tabcontent");
+                    
+                    for(i=0;i<tabcontent;i++){
+                      tabcontent[i].style.display="none";
+                    }
+
+                    tablinks=document.getElementsByClassName("tablinks");
+                    for(i=0;i<tablinks.length;i++){
+                      tablinks[i].className=tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display="block";
+                    evt.currentTarget.className+=" active";
+                  }
+                </script>
 
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
