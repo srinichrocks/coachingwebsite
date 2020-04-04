@@ -335,53 +335,7 @@
                 <h2 class="text-uppercase">Theory</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 
-                <style>
-                  *{
-                      box-sizing: border-box;
-                  }
-                  body{font-family: Lato, sans-serif
-                  }
-                  .tab{
-                    float:left;
-                    border:1px solid #355C7D;
-                    background-color:#355C7D;
-                    width:35%;
-                    height:1000px;
-                }
-
-                  .tab button{
-                    display:block;
-                    background-color:inherit;
-                    color:black;
-                    padding: 22px 16px;
-                    width:100%;
-                    border: none;
-                    outline: none;
-                    text-align: left;
-                    cursor:pointer;
-                    transition: 0.3s;
-                    font: 400 17px Lato, sans-serif;
-                    color: white;
-                  }
-                  .tab button:hover{
-                    background-color:#EEE;
-                    color: black;
-                  }
-                  .tab button.active{
-                    background-color:#DDD;
-                    color: black;
-                    font:500 25px Lato, sans-serif;
-                  }
-
-                  .tabcontent{
-                    float:left;
-                    padding: 0 12px;
-                    border: 1px solid #DDD;
-                    width: 70%;
-                    border-left: none;
-                    height: 1000px;
-                  }
-                </style>
+                
                 <div class="tab">
                   <button class="tablinks" onclick="openCity(event,'Front Foot Defense')" id="defaultOpen">Front Foot Defense</button>
                   <button class="tablinks" onclick="openCity(event,'Good Length Ball')">Good Length Ball</button>
@@ -422,25 +376,6 @@
                     Follow through - for defensive shot there is no follow through               
                   </p>
                 </div>
-                <script type="text/javascript">
-                  function openCity(evt, cityName){
-                    var i, tabcontent, tablinks;
-
-                    tabcontent=document.getElementsByClassName("tabcontent");
-                    
-                    for(i=0;i<tabcontent;i++){
-                      tabcontent[i].style.display="none";
-                    }
-
-                    tablinks=document.getElementsByClassName("tablinks");
-                    for(i=0;i<tablinks.length;i++){
-                      tablinks[i].className=tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(cityName).style.display="block";
-                    evt.currentTarget.className+=" active";
-                  }
-                  document.getElementById("defaultOpen").click();
-                </script>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close Project</button>
