@@ -338,7 +338,8 @@
                   *{
                       box-sizing: border-box;
                   }
-                  body{font-family: Lato, sans-serif
+                  body{
+                    font-family: Lato, sans-serif
                   }
                   .tab{
                     float:left;
@@ -373,7 +374,6 @@
                   }
 
                   .tabcontent{
-                    display:none;
                     float:left;
                     padding: 0 12px;
                     border: 1px solid #DDD;
@@ -428,7 +428,7 @@
 
                     tabcontent=document.getElementsByClassName("tabcontent");
                     
-                    for(i=0;i<tabcontent;i++){
+                    for(i=0;i<tabcontent.length;i++){
                       tabcontent[i].style.display="none";
                     }
 
